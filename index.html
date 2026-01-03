@@ -2,18 +2,21 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="Genfix Kenya Limited provides professional engineering, maintenance, and technical solutions across Kenya.">
-
         <title>GenFix Kenya Limited</title>
         <link rel="stylesheet" href="genfix.css"/>
     </head>
+   
     <body>
         <!--NAV-->
         <nav class="nav">
             <div class="nav-inner">
                 <div class="logo">GENFIX<span class="muted">Kenya</span></div>
+                <!--Hamburger-->
+                <button class="hamburger" aria-label="Menu">
+                   ≡
+                </button>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
                     <li><a href="S&P.html">Services</a></li>
                     <li><a href="S&P.html">Products</a></li>
                     <li><a href="Pr&C.html">Process</a></li>
@@ -102,9 +105,20 @@
       // Insert current year
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        //Close menu when any link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+            });
+        });
+    </script>
     </body>
 </html>
-
-
-
-
