@@ -5,8 +5,8 @@ html,body { height:100%; font-family: system-ui, -apple-system, 'Segoe UI', Robo
 .nav {position: sticky; top: 0;background: #ffffffcc; backdrop-filter: blur(6px); z-index: 1000;box-shadow: 0 1px 6px rgba(0,0,0,0.06);}
 .hamburger {display: none;font-size: 1.8rem;background: none;border: none;cursor: pointer;color: #0b5bd7;}
 .nav-inner { max-width: 1100px;margin:0 auto;padding: 14px 20px; display: flex;align-items: center;justify-content: space-between;gap: 20px;}
-.logo {font-weight: 700;color: #0b5bd7;font-size: 1.1rem;letter-spacing: 0.6px;}
-.logo .muted {color: #333;font-weight: 500;margin-left: 6px;}
+.logo {font-weight: 1000;color: #0b5bd7;font-size: 1.2rem;letter-spacing: 0.6px;font-family: Georgia, 'Times New Roman', Times, serif;}
+.logo .muted {color: #333;font-weight: 600;margin-left: 6px;}
 
 /*---nav links---*/
 .nav-links { list-style: none;display: flex;gap: 20px;align-items: center;}
@@ -127,10 +127,6 @@ opacity: 0;}
     
     
 }
-
-
-
-
 
 
 
